@@ -36,6 +36,15 @@ emailButton.addEventListener('click', function () {
     dadiButton.classList = 'd-none';
     //titlePage.classList.add("d-none");
 
+    //creo un elemento dinamico per stampare il risultato
+    let result = document.createElement("div");
+
+    // pulisce eventuali altre prove fatte
+    result.classList.remove('win', 'game-over');
+    result.classList.add('container', 'result');
+    result.innerHTML = '';
+
+
     //     Mail
     // Chiedi all’utente la sua email,
     // controlla che sia nella lista di chi può accedere,
@@ -63,9 +72,7 @@ emailButton.addEventListener('click', function () {
             }
         }
 
-        //creo un elemento dinamico per stampare il risultato
-        let result = document.createElement("div");
-        result.classList.add('container', 'result');
+
         //verifica la condizione
         if (mailTrovata) {
             result.innerHTML = "Mail autorizzata";
@@ -76,9 +83,6 @@ emailButton.addEventListener('click', function () {
         }
         // stampa in pagina il risultato
         document.body.appendChild(result);
-
-
-
 
     })
 

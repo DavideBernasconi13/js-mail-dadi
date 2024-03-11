@@ -58,6 +58,7 @@ input {
 .result {
     color: #fff;
     text-align: center;
+    padding: 15px 0;
 }
 
 .win {
