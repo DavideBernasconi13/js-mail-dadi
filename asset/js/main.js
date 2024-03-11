@@ -26,15 +26,17 @@
 
 const emailButton = document.getElementById('email');
 const dadiButton = document.getElementById('dadi');
+const esciButton = document.getElementById('esci');
 const playEmail = document.getElementById('playEmail');
 
 //const titlePage = document.getElementsByTagName('h1');
 
 
 emailButton.addEventListener('click', function () {
-    // nascondoBottone e titolo
+    // nascondoBottone e mostro bottone per uscire dalla pagina e tornare alla home
     dadiButton.classList = 'd-none';
-    //titlePage.classList.add("d-none");
+    esciButton.classList.remove('d-none');
+    emailButton.classList.add('active');
 
     //creo un elemento dinamico per stampare il risultato
     let result = document.createElement("div");
@@ -92,8 +94,9 @@ emailButton.addEventListener('click', function () {
 })
 
 dadiButton.addEventListener('click', function () {
-    // nascondoBottone e titolo
+    // nascondoBottone e  mostro bottone per uscire
     emailButton.classList = 'd-none';
-    //titlePage.classList.add("d-none");
+    esciButton.classList.remove('d-none');
+    dadiButton.classList.add('active');
 })
 
