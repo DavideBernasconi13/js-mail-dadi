@@ -54,3 +54,17 @@ input {
     justify-content: space-around;
     align-items: center;
 }
+
+.result {
+    color: #fff;
+    text-align: center;
+}
+
+.win {
+    background-color: greenyellow;
+    text-transform: uppercase;
+}
+
+.game-over {
+    background-color: red;
+}

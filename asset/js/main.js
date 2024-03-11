@@ -62,14 +62,24 @@ emailButton.addEventListener('click', function () {
                 mailTrovata = true;
             }
         }
-        let result = document.createElement = 'div';
-        result.innerHTML = 'Div creato';
 
+        //creo un elemento dinamico per stampare il risultato
+        let result = document.createElement("div");
+        result.classList.add('container', 'result');
+        //verifica la condizione
         if (mailTrovata) {
-            console.log("Mail autorizzata");
+            result.innerHTML = "Mail autorizzata";
+            result.classList.add('win');
         } else {
-            console.log("crash");
+            result.innerHTML = "Spiacente: accesso negato!";
+            result.classList.add('game-over')
         }
+        // stampa in pagina il risultato
+        document.body.appendChild(result);
+
+
+
+
     })
 
 
