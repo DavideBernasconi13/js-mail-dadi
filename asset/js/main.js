@@ -27,6 +27,7 @@
 const emailButton = document.getElementById('email');
 const dadiButton = document.getElementById('dadi');
 const playEmail = document.getElementById('playEmail');
+
 //const titlePage = document.getElementsByTagName('h1');
 
 
@@ -34,11 +35,44 @@ emailButton.addEventListener('click', function () {
     // nascondoBottone e titolo
     dadiButton.classList = 'd-none';
     //titlePage.classList.add("d-none");
+
     //     Mail
     // Chiedi all’utente la sua email,
     // controlla che sia nella lista di chi può accedere,
     // stampa un messaggio appropriato sull’esito del controllo.
+
+    //al cliccare del bottone faccio apparire il form di input
     playEmail.classList.remove('d-none');
+    playEmail.classList.add('d-flex');
+
+    //leggere il valore della mail stabilita dall'utente
+    let mailUser = document.querySelector('input');
+    const btnsmall = document.querySelector('.btn-small');
+    btnsmall.addEventListener('click', function () {
+        let valueMail = mailUser.value;
+        let mailTrovata = false;
+
+        let mailAutorizzate = ['mario.rossi@gmail.com', 'test@test.it', 'info@dabecomunicazione.it']
+
+
+        for (let i = 0; i < mailAutorizzate.length; i++) {
+            console.log(mailAutorizzate[i]);
+            if (mailUser === mailAutorizzate[i]) {
+                mailTrovata = true;
+            }
+            console.log(mailTrovata);
+        }
+
+        if (mailTrovata) {
+            console.log("Mail autorizzata");
+        } else {
+            console.log("crash");
+            console.log(mailTrovata);
+        }
+    })
+
+
+
 
 
 })
