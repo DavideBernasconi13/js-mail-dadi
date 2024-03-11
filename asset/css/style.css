@@ -28,3 +28,29 @@ h1 {
     border-radius: 10px;
     cursor: pointer;
 }
+
+/* Esercizio mail */
+.btn-small {
+    padding: 10px 30px;
+    background: #fc9700;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+}
+
+input {
+    padding: 10px 30px;
+    display: inline-block;
+    width: 80%;
+}
+
+/* Classi utility */
+.d-none {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
