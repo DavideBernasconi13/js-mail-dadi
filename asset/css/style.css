@@ -64,6 +64,7 @@ input {
 .win {
     background-color: greenyellow;
     text-transform: uppercase;
+    color: #444;
 }
 
 .game-over {

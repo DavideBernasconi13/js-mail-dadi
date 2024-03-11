@@ -40,8 +40,7 @@ emailButton.addEventListener('click', function () {
     let result = document.createElement("div");
 
     // pulisce eventuali altre prove fatte
-    result.classList.remove('win', 'game-over');
-    result.classList.add('container', 'result');
+    result.setAttribute("class", "");
     result.innerHTML = '';
 
 
@@ -72,7 +71,7 @@ emailButton.addEventListener('click', function () {
             }
         }
 
-
+        result.setAttribute("class", "container result");
         //verifica la condizione
         if (mailTrovata) {
             result.innerHTML = "Mail autorizzata";
