@@ -50,24 +50,25 @@ emailButton.addEventListener('click', function () {
     const btnsmall = document.querySelector('.btn-small');
     btnsmall.addEventListener('click', function () {
         let valueMail = mailUser.value;
-        let mailTrovata = false;
 
-        let mailAutorizzate = ['mario.rossi@gmail.com', 'test@test.it', 'info@dabecomunicazione.it']
+        let mailAutorizzate = ['mario.rossi@gmail.com', 'test@test.it', 'info@dabecomunicazione.it'];
+
+        let mailTrovata = false;
 
 
         for (let i = 0; i < mailAutorizzate.length; i++) {
             console.log(mailAutorizzate[i]);
-            if (mailUser === mailAutorizzate[i]) {
+            if (valueMail === mailAutorizzate[i]) {
                 mailTrovata = true;
             }
-            console.log(mailTrovata);
         }
+        let result = document.createElement = 'div';
+        result.innerHTML = 'Div creato';
 
         if (mailTrovata) {
             console.log("Mail autorizzata");
         } else {
             console.log("crash");
-            console.log(mailTrovata);
         }
     })
 
