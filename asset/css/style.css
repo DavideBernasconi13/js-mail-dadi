@@ -94,3 +94,8 @@ input {
     background-color: #fc9700;
     color: #fff;
 }
+
+.text-center {
+    text-align: center;
+    font-size: 2rem;
+}
